@@ -18,7 +18,7 @@
 
 <section id="container">
     <h2>REQUESTING MAIL</h2>
-    <form name="form" id="test-form" method="post" action="#">
+    <form name="form" id="test-form" method="post" action="confirm.php">
         <div id="wrapping" class="clearfix">
             <section id="aligned">
                 <input type="text" name="uid" id="uid" placeholder="Your ID" autocomplete="off" tabindex="1" class="txtinput" required>
