@@ -1,7 +1,7 @@
-    <?php
+<?php
 
 
-    ?>
+?>
 
 <html lang="en">
 <head>
@@ -18,16 +18,23 @@
 
 <section id="container">
     <h2>REQUESTING MAIL</h2>
-    <form name="form" id="test-form" method="post" action="confirm.php">
+
+    <form name="form" id="test-form" method="get" action="confirm.php">
         <div id="wrapping" class="clearfix">
             <section id="aligned">
-                <input type="text" name="uid" id="uid" placeholder="Your ID" autocomplete="off" tabindex="1" class="txtinput" required>
+                <input type="text" name="uid" id="uid" placeholder="Your ID - fixed 10 numbers" autocomplete="off" tabindex="1"
+                       class="txtinput" value="<?php if (isset($_GET['uid'])) echo $_GET['uid']; ?>" required>
 
-                <input type="text" name="name" id="name" placeholder="Your name" autocomplete="off" tabindex="2" class="txtinput" required>
+                <input type="text" name="name" id="name" placeholder="Your name" autocomplete="off" tabindex="2"
+                       class="txtinput" value="<?php if (isset($_GET['name'])) echo $_GET['name'] ?>" required>
 
-                <input type="email" name="email" id="email" placeholder="Your e-mail address" autocomplete="off" tabindex="3" class="txtinput" required>
+                <input type="email" name="email" id="email" placeholder="Your e-mail address" autocomplete="off"
+                       tabindex="3" class="txtinput" value="<?php if (isset($_GET['email'])) echo $_GET['email'] ?>"
+                       required>
 
-                <input type="text" name="address" id="address" placeholder="Your address" autocomplete="off" tabindex="4" class="txtinput">
+                <input type="text" name="address" id="address" placeholder="Your address" autocomplete="off"
+                       tabindex="4" class="txtinput"
+                       value="<?php if (isset($_GET['address'])) echo $_GET['address'] ?>">
 
             </section>
 
@@ -61,6 +68,15 @@
             </section>
         </div>
 
+        <div style="font-size: 20">
+            <?php if (isset($_GET['mode'])) {
+                if ($_GET['mode'] == 'canceled')
+                    echo "You have canceled the request";
+                else
+                    echo "Your information are invalid";
+            }
+            ?>
+        </div>
 
         <section id="buttons">
             <input type="reset" name="reset" id="resetbtn" class="resetbtn" value="Reset">
