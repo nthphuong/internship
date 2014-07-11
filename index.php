@@ -12,10 +12,8 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <title>Stylish CSS3 Form Effects - Hongkiat Demo</title>
-    <meta name="author" content="Jake Rocheleau">
-    <link rel="shortcut icon" href="http://static02.hongkiat.com/logo/hkdc/favicon.ico">
-    <link rel="icon" href="http://static02.hongkiat.com/logo/hkdc/favicon.ico">
+    <title>Sending-mail Form</title>
+    <meta name="author" content="GoD.DKVA">
     <link rel="stylesheet" type="text/css" media="all" href="style.css">
     <link rel="stylesheet" type="text/css" media="all" href="responsive.css">
 </head>
@@ -23,11 +21,12 @@
 <body>
 
 <section id="container">
-    <span class="chyron"><em><a href="http://www.hongkiat.com/blog/">&laquo; back to the site</a></em></span>
-    <h2>Hongkiat Stylish Form Elements</h2>
-    <form name="hongkiat" id="hongkiat-form" method="post" action="#">
+    <h2>Sending-mail Form</h2>
+    <form name="form" id="test-form" method="post" action="#">
         <div id="wrapping" class="clearfix">
             <section id="aligned">
+                <input type="text" name="userID" id="userID" placeholder="UID" autocomplete="off" tabindex="1" class="txtinput">
+
                 <input type="text" name="name" id="name" placeholder="Your name" autocomplete="off" tabindex="1" class="txtinput">
 
                 <input type="email" name="email" id="email" placeholder="Your e-mail address" autocomplete="off" tabindex="2" class="txtinput">
