@@ -1,7 +1,13 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: BungBu
- * Date: 7/11/14
- * Time: 9:56 AM
- */ 
+
+Class View {
+    private $controller;
+
+    function view($controller) {
+        $this->controller = $controller;
+    }
+
+    function output() {
+        return $this->controller;
+    }
+}
