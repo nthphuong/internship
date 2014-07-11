@@ -12,7 +12,7 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <title>Sending-mail Form</title>
+    <title>REQUESTING MAIL</title>
     <meta name="author" content="GoD.DKVA">
     <link rel="stylesheet" type="text/css" media="all" href="style.css">
     <link rel="stylesheet" type="text/css" media="all" href="responsive.css">
@@ -21,21 +21,18 @@
 <body>
 
 <section id="container">
-    <h2>Sending-mail Form</h2>
+    <h2>REQUESTING MAIL</h2>
     <form name="form" id="test-form" method="post" action="#">
         <div id="wrapping" class="clearfix">
             <section id="aligned">
                 <input type="text" name="userID" id="userID" placeholder="UID" autocomplete="off" tabindex="1" class="txtinput">
 
-                <input type="text" name="name" id="name" placeholder="Your name" autocomplete="off" tabindex="1" class="txtinput">
+                <input type="text" name="name" id="name" placeholder="Your name" autocomplete="off" tabindex="2" class="txtinput">
 
-                <input type="email" name="email" id="email" placeholder="Your e-mail address" autocomplete="off" tabindex="2" class="txtinput">
+                <input type="email" name="email" id="email" placeholder="Your e-mail address" autocomplete="off" tabindex="3" class="txtinput">
 
-                <input type="url" name="website" id="website" placeholder="Website URL" autocomplete="off" tabindex="3" class="txtinput">
+                <input type="url" name="website" id="website" placeholder="Your address" autocomplete="off" tabindex="4" class="txtinput">
 
-                <input type="tel" name="telephone" id="telephone" placeholder="Phone number?(optional)" tabindex="4" class="txtinput">
-
-                <textarea name="message" id="message" placeholder="Enter a cool message..." tabindex="5" class="txtblock"></textarea>
             </section>
 
             <section id="aside" class="clearfix">
